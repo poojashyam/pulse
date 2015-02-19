@@ -1,0 +1,39 @@
+<div id='Header'>
+    <ul id='userDetailsHeader'>
+        <li id='userFullName'>{{userFullName}}</li>
+        <li> | </li>
+        <li>{{userThumbnail}}</li>
+        <li> | </li>
+        <li><a href='#'>Logout</a></li>
+    </ul>
+    <ul id='companyLinksHeader'>
+        <li><a href='#'>Who we are</a></li>
+        <li> | </li>
+        <li><a href='#'>What we do</a></li>
+    </ul>
+</div>
+
+<style>
+li {
+    display:inline;
+}
+    #userFullName {
+        text-transform: uppercase;
+    }
+    #userDetailsHeader {
+        float: left;
+    }
+    #companyLinksHeader {
+        text-transform: uppercase;
+        font-weight: bold;
+        float:right;
+        color:green; 
+    }
+    #Header {
+        background-color: black;
+    }
+    #companyLinksHeader li{
+        color:green;
+    }
+    
+</style>
