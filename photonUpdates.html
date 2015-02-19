@@ -3,25 +3,39 @@
 .placing{
     
     border:1px solid green;
-    width:200px;
-    font-size:10px;
+    width:220px;
+    font-size:10pt;
     background-color: green;
+    color:white;
+    
     float: right;
-    padding:5px;
+    padding-bottom:0px;
 }
+    .placing td, .placing th{
+        color:white;
+        font-family:"HelveticaNeueLT Std";
+        font-size:9pt;
+    }
+    
 
 </style>
 
 
 <div id = "photonupdates">
+    
     {{#with update}}
+    
     <div class = "placing">
-    <table>
-    <tr><td><img src="{{image}}" style="float: left; width: 50px; padding-right:10px";>{{field1}}</td></tr>
-    <tr><td>{{field2}}</td></tr>
-    <tr><td>{{field3}}</td></tr>
-    <tr><td>{{field4}}</td></tr>
-        
+    <table cellpadding="5" cellspacing="5">
+    <tr><th>Photon Updates<input type = "search" value = "search" name = "search"><img src = "searchicon.png" style = "float:right; width:10px";/></th></tr>
+    <tr ><td><img src="{{image}}" style="float: left; width: 55px; padding-right:10px";/>How do you define #Omnichannel? Photon explains with an end to end #Retail Scenario. <a href = "http://t.co/1oD8UqVIpP">http://t.co/1oD8UqVIpP</a></td></tr>
+    <tr><td>Mon Feb 16 19:12:19 2015</td></tr>
+    <tr><td><img src="{{image}}" style="float: left; width: 55px; padding-right:10px";/>Which would you prefer #Healthkit or #GoogleFit? <a href = "http://t.co/KwNJuI2U9D">http://t.co/KwNJuI2U9D</a></td></tr>
+    <tr><td>Thu Feb 05 13:16:30 2015</td></tr>
+    <tr><td><img src="{{image}}" style="float: left; width: 55px; padding-right:10px";/>Interesting take on digital body language <a href = "http://t.co/93FOJQvPxb"> http://t.co/93FOJQvPxb</a></td></tr>
+    <tr><td>Thu Jan 29 21:33:59 2015</td></tr>
+    <tr><td><img src="{{image}}" style="float: left; width: 55px; padding-right:10px";>{{field4}}</td></tr>
+    <tr><td>Fri Jan 23 06:42:10 2015</td></tr>    
     </table>
     
     
