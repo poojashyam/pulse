@@ -10,7 +10,8 @@ Clazz.GenericWidget = Clazz.extend(
         var widgeta=new Clazz.footerWidget(this.config.data);
         var widgetacontainer = document.getElementById("footercontainer");
         widgeta.render(widgetacontainer);
-        var headerWidget=new Clazz.headerWidget(this.config);
+        
+        var headerWidget=new Clazz.headerWidget(this.config.data);
         var headerContainer = document.getElementById("headerContainer");
         headerWidget.render(headerContainer);
         }

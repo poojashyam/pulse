@@ -1,39 +1,62 @@
 <div id='Header'>
+    {{#with header}}
     <ul id='userDetailsHeader'>
         <li id='userFullName'>{{userFullName}}</li>
         <li> | </li>
-        <li>{{userThumbnail}}</li>
+        <li><img class='thumbnail' src="{{userImage}}"></li>
         <li> | </li>
-        <li><a href='#'>Logout</a></li>
+        <li><a href='##'>Logout</a></li>
     </ul>
     <ul id='companyLinksHeader'>
         <li><a href='#'>Who we are</a></li>
         <li> | </li>
         <li><a href='#'>What we do</a></li>
     </ul>
+    {{/with}}
 </div>
+<div id='background'></div>
+
 
 <style>
-li {
+    #background {
+        background-color: black;
+        padding:25;
+    }
+    li {
     display:inline;
-}
+    }
     #userFullName {
         text-transform: uppercase;
     }
     #userDetailsHeader {
-        float: left;
+        position: fixed;
+        left: -20;
+        color: white;
+    }
+    #userDetailsHeader a:link{
+        color: white;
     }
     #companyLinksHeader {
         text-transform: uppercase;
-        font-weight: bold;
-        float:right;
-        color:green; 
+        font-size: 16;
+        font-weight: bold; 
+        position:fixed;
+        right:20;
     }
-    #Header {
-        background-color: black;
+    #companyLinksHeader a:link{
+        color:green;
+        text-decoration: none;
+    }
+    #companyLinksHeader a:visited{
+        color:green;
+        text-decoration: none;
     }
     #companyLinksHeader li{
         color:green;
+    }
+    .thumbnail {
+        width: 16;
+        height: 16;
     }
     
 </style>
