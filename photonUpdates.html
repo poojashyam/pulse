@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<style>
+.placing{
+    
+    border:1px solid green;
+    width:200px;
+    font-size:10px;
+    background-color: green;
+    float: right;
+    padding:5px;
+}
+
+</style>
+
+
+<div id = "photonupdates">
+    {{#with update}}
+    <div class = "placing">
+    <table>
+    <tr><td><img src="{{image}}" style="float: left; width: 50px; padding-right:10px";>{{field1}}</td></tr>
+    <tr><td>{{field2}}</td></tr>
+    <tr><td>{{field3}}</td></tr>
+    <tr><td>{{field4}}</td></tr>
+        
+    </table>
+    
+    
+    </div>
+    {{/with}}
+</div>
