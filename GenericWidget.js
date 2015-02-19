@@ -3,10 +3,11 @@ Clazz.GenericWidget = Clazz.extend(
     
         initialize : function(config){
             this.templateUrl = "contact.html";
-            this.data = config.data;
+            this.config = config;
+            
         },
         postRender : function(){
-        var widgeta=new Clazz.footerWidget(this.config);
+        var widgeta=new Clazz.footerWidget(this.config.data);
         var widgetacontainer = document.getElementById("footercontainer");
         widgeta.render(widgetacontainer);
         }
