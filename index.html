@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <script type="application/javascript" src="/jquery-1.8.2.js"></script>
+    <script type="application/javascript" src="/handlebars-1.0.0.beta.6.js"></script>
+    <script type="application/javascript" src="/Class.js"></script>
+    <script type="application/javascript" src="/Base.js"></script>
+    <script type="application/javascript" src="/TemplateProvider.js"></script>
+    <script type="application/javascript" src="/Widget.js"></script>
+    <script type="application/javascript" src="/WidgetWithTemplate.js"></script>
+    <script type="application/javascript" src="/GenericWidget.js"></script>
+    </head>
+
+    <body>       
+    <script>
+        document.config = {
+            templateUrl: "contact.html",
+            data:
+            {
+                "name" : "Someone",
+                "phonenumber" : 1234567,
+                "city" : "Dallas",
+                "state" : "Texas"
+            }
+        };
+    </script>
+       
+        <div id="contactContainer"></div>
+        <script type="application/javascript">
+            $(document).ready(function(){
+                var widget = new Clazz.GenericWidget(document.config);
+                var contactContainer = document.getElementById("contactContainer");
+                widget.render(contactContainer);
+            });
+        </script>
+    </body>
+</html>
