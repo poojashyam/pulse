@@ -7,15 +7,26 @@ Clazz.menuWidget = Clazz.extend(
         },
         
         apps1 : function(){
-            $('.subMenu').hide();
-            $('.menuTitle').click(function(){
-                $(this).children('.subMenu').toggle();
+            $('#a').hide();
+            $('#b').hide();
+            $('#aa').click(function(){
+                $('#a').toggle();
+                $('#b').hide();
             })
-            $('#swipe').click(function(){
-                $('.menuTitle').toggle()
-            })            
+            $('#bb').click(function(){
+                $('#b').toggle();
+                $('#a').hide();
+            })
+            },
+        jq2: function(){
+        $('.menu1 table').show();
+            $('#menutoggle').click(function(){
+                $('.menu1 table').toggle();
+            })
+                      
             },
         postRender : function(){
         this.apps1();
+        this.jq2();
         }
 });

@@ -11,10 +11,21 @@
     float: right;
     padding-bottom:0px;
 }
-    .placing td, .placing th{
+    .placing td{
         color:white;
         font-family:"HelveticaNeueLT Std";
         font-size:9pt;
+    }
+    .bttn{
+        width:220px;
+        background-color: grey;
+        
+        
+    }
+    
+    .placing th input{
+        background-color: grey;
+    
     }
     
 
@@ -25,9 +36,11 @@
     
     {{#with update}}
     
-    <div class = "placing">
+    <div class = "placing" style = "text-align: center";>
+        
     <table cellpadding="5" cellspacing="5">
-    <tr><th>Photon Updates<input type = "search" value = "search" name = "search"><img src = "searchicon.png" style = "float:right; width:10px";/></th></tr>
+       <th>  Photon Updates     <input type = "search" value = "search" name = "search" style = "width:80px; margin-right:5px ";></th>
+        <tr></tr>
     <tr ><td><img src="{{image}}" style="float: left; width: 55px; padding-right:10px";/>How do you define #Omnichannel? Photon explains with an end to end #Retail Scenario. <a href = "http://t.co/1oD8UqVIpP">http://t.co/1oD8UqVIpP</a></td></tr>
     <tr><td>Mon Feb 16 19:12:19 2015</td></tr>
     <tr><td><img src="{{image}}" style="float: left; width: 55px; padding-right:10px";/>Which would you prefer #Healthkit or #GoogleFit? <a href = "http://t.co/KwNJuI2U9D">http://t.co/KwNJuI2U9D</a></td></tr>
@@ -37,8 +50,9 @@
     <tr><td><img src="{{image}}" style="float: left; width: 55px; padding-right:10px";>{{field4}}</td></tr>
     <tr><td>Fri Jan 23 06:42:10 2015</td></tr>    
     </table>
-    
-    
+        <div class = "bttn">
+    <input id = "touch" type = "button" value = "feed" style= "width:220px; background-color:  grey";>
+    </div>
     </div>
     {{/with}}
 </div>
