@@ -7,21 +7,13 @@ Clazz.menuWidget = Clazz.extend(
         },
         
         apps1 : function(){
-            //$('.change').hide();
-            $('.rootMenu').click(function(){
-                $('.subMenu').children.toggle()
+            $('.subMenu').hide();
+            $('.menuTitle').click(function(){
+                $(this).children('.subMenu').toggle();
             })
-            /*$('#changePaymentMethod').click(function(){
-                $('#otherPaymentMethod').toggle()
-            })
-            $('#changeBillingAddress').click(function(){
-                $('#otherBillingAddress').toggle()
-            })
-            $('.otherBillingAddress').click(function(){
-               otherbillingAddress=$(this).text();
- $('#currentBillingAddress').text(otherbillingAddress)
-            })*/
-            
+            $('#swipe').click(function(){
+                $('.menuTitle').toggle()
+            })            
             },
         postRender : function(){
         this.apps1();
