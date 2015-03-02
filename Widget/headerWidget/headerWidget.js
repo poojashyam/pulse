@@ -3,6 +3,6 @@ Clazz.headerWidget = Clazz.extend(
     
         initialize : function(config){
             this.data = config;
-            this.templateUrl = "header.html";
+            this.templateUrl = "./Widget/headerWidget/header.html";
         }
 });

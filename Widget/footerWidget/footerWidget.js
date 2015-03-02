@@ -5,7 +5,7 @@ Clazz.footerWidget = Clazz.extend(
             //this.templateUrl = config.templateUrl;
             this.data = config;
          
-            this.templateUrl = "footer.html";
+            this.templateUrl = "./Widget/footerWidget/footer.html";
             //console.log("widget1" +config.data);
         }
 });

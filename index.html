@@ -1,17 +1,17 @@
 <html>
     <head>
-    <script type="application/javascript" src="/jquery-1.8.2.js"></script>
-    <script type="application/javascript" src="/handlebars-1.0.0.beta.6.js"></script>
-    <script type="application/javascript" src="/Class.js"></script>
-    <script type="application/javascript" src="/Base.js"></script>
-    <script type="application/javascript" src="/TemplateProvider.js"></script>
-    <script type="application/javascript" src="/Widget.js"></script>
-    <script type="application/javascript" src="/WidgetWithTemplate.js"></script>
-    <script type="application/javascript" src="/GenericWidget.js"></script>
-    <script type="application/javascript" src="/headerWidget.js"></script>
-    <script type="application/javascript" src="/footerWidget.js"></script>
-    <script type="application/javascript" src="/photonUpdatesWidget.js"></script>
-    <script type="application/javascript" src="/menuWidget.js"></script>
+    <script type="application/javascript" src="./Core/jquery-1.8.2.js"></script>
+    <script type="application/javascript" src="./Core/handlebars-1.0.0.beta.6.js"></script>
+    <script type="application/javascript" src="./Core/Class.js"></script>
+    <script type="application/javascript" src="./Core/Base.js"></script>
+    <script type="application/javascript" src="./Core/TemplateProvider.js"></script>
+    <script type="application/javascript" src="./Core/Widget.js"></script>
+    <script type="application/javascript" src="./Core/WidgetWithTemplate.js"></script>
+    <script type="application/javascript" src="./Widget/genericWidget/GenericWidget.js"></script>
+    <script type="application/javascript" src="./Widget/headerWidget/headerWidget.js"></script>
+    <script type="application/javascript" src="./Widget/footerWidget/footerWidget.js"></script>
+    <script type="application/javascript" src="./Widget/photonUpdates/photonUpdatesWidget.js"></script>
+    <script type="application/javascript" src="./Widget/Menu/menuWidget.js"></script>
 
         
     </head>
@@ -25,11 +25,11 @@
                 logo: "pulse2logo.png",
                 footer:
                 {
-                    logo: "pulse2logo.png",
-                    logo1:"mast-icon.png",
-                    logo2:"p-icon.png",
+                    logo: "./Widget/footerWidget/pulse2logo.png",
+                    logo1:"./Widget/footerWidget/mast-icon.png",
+                    logo2:"./Widget/footerWidget/p-icon.png",
 
-                    logo3:"c-icon.png",
+                    logo3:"./Widget/footerWidget/c-icon.png",
                     footercontent: "© 2015 North America Photon Infotech Limited.",
                     websiteURL:"http://www.photon.in",
                 },
@@ -40,11 +40,11 @@
 
                 },
                 update:{
-                field1: "How do you define #Omnichannel? Photon explains with an end to end #Retail Scenario. http://t.co/1oD8UqVIpP",
+                field1:"How do you define #Omnichannel? Photon explains with an end to end #Retail Scenario. http://t.co/1oD8UqVIpP",
                 field2:"Which would you prefer #Healthkit or #GoogleFit? http://t.co/KwNJuI2U9D",
                 field3:"Interesting take on digital body language http://t.co/93FOJQvPxb",
-                field4:"@Windows Absolutely!!! We are super excited about how we can build innovative solutions on Windows 10 for our customers.",
-                image: "powerlogo.jpeg"
+                field4:"@Windows Absolutely!!! We are super excited about how we can build innovative solutions on Windows 10 for our customers",
+                image: "./Widget/photonUpdates/powerlogo.jpeg"
                 }
             }
         };  

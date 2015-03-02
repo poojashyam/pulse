@@ -2,7 +2,7 @@ Clazz.GenericWidget = Clazz.extend(
     Clazz.WidgetWithTemplate,{
     
         initialize : function(config){
-            this.templateUrl = "contact.html";
+            this.templateUrl = "./Widget/genericWidget/contact.html";
             this.config = config;
             
         },

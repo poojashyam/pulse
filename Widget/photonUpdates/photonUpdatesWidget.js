@@ -3,7 +3,7 @@ Clazz.photonUpdatesWidget = Clazz.extend(
     
         initialize : function(config){
             this.data = config;
-            this.templateUrl = "photonUpdates.html";
+            this.templateUrl = "./Widget/photonUpdates/photonUpdates.html";
         },
         /*jQuer1: function(){
             $(document).ready(function(){

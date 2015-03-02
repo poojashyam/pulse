@@ -2,7 +2,7 @@ Clazz.menuWidget = Clazz.extend(
     Clazz.WidgetWithTemplate,{
         
         initialize : function(data){
-            this.templateUrl = "menu.html";
+            this.templateUrl = "./Widget/Menu/menu.html";
             this.data = data;
         },
         
